@@ -96,13 +96,15 @@ footer .footer .footer_list ul li a {
   }
 }
 @media screen and (max-width: 700px) {
-  footer .phone_menu.fadein.on {
+  footer .phone_menu.fadein.display {
+    display: block;
+  }
+  footer .phone_menu.fadein.display.on {
     opacity: 1;
     transition: all ease 0.5s;
   }
   footer .phone_menu {
     opacity: 0;
-    display: block;
     position: fixed;
     top: 0;
     height: 70px;
