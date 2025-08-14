@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth;
 }
@@ -5,6 +6,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック";
 }
 body main {
   padding: 0 10px;
@@ -26,7 +28,8 @@ p {
 footer {
   margin-top: 100px;
 }
-footer .phone_menu, footer #gnavwrap {
+footer .phone_menu,
+footer #gnavwrap {
   display: none;
 }
 footer .footer .last_footer {
@@ -93,13 +96,17 @@ footer .footer .footer_list ul li a {
   }
 }
 @media screen and (max-width: 700px) {
+  footer .phone_menu.fadein.on {
+    opacity: 1;
+    transition: all ease 0.5s;
+  }
   footer .phone_menu {
+    opacity: 0;
     display: block;
     position: fixed;
-    bottom: 0;
+    top: 0;
     height: 70px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
     z-index: 10;
   }
   footer .phone_menu ul {
@@ -110,7 +117,6 @@ footer .footer .footer_list ul li a {
   }
   footer .phone_menu ul li {
     height: 100%;
-    width: 33.3333333333%;
   }
   footer .phone_menu ul li a {
     display: flex;
@@ -119,7 +125,7 @@ footer .footer .footer_list ul li a {
     align-items: center;
     text-align: center;
     justify-content: space-around;
-    color: white;
+    color: #6f6f6f;
   }
   footer .phone_menu ul li a svg {
     width: 23px;
@@ -127,6 +133,29 @@ footer .footer .footer_list ul li a {
   }
   footer .phone_menu ul li a p {
     width: 100%;
+  }
+  footer .phone_menu ul li:nth-child(1),
+  footer .phone_menu ul li:nth-child(2) {
+    height: 100%;
+    width: 25%;
+    background-image: linear-gradient(180deg, rgb(240, 240, 240) 59%, rgb(170, 170, 170));
+    border-right: 1px solid #6f6f6f;
+  }
+  footer .phone_menu ul li:nth-child(3) {
+    height: 100%;
+    width: 50%;
+    background-color: #0098db;
+  }
+  footer .phone_menu ul li:nth-child(3) a {
+    display: flex;
+    flex-direction: row;
+    color: white;
+  }
+  footer .phone_menu ul li:nth-child(3) a .phone_str {
+    text-align: left;
+  }
+  footer .phone_menu ul li:nth-child(3) a .phone_str p {
+    font-size: 0.7rem;
   }
   footer .phone_menu ul .menu_hot {
     border-left: 1px solid white;
@@ -141,7 +170,7 @@ footer .footer .footer_list ul li a {
     position: fixed;
     width: 50px;
     height: 50px;
-    bottom: 75px;
+    bottom: 20px;
     right: 10px;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.8);
@@ -223,7 +252,7 @@ footer .footer .footer_list ul li a {
     z-index: 2;
   }
   footer .footer .last_footer {
-    display: none;
+    margin-bottom: 70px;
   }
   footer .footer .logo {
     flex-direction: column;

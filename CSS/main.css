@@ -6,6 +6,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック";
 }
 body main {
   padding: 0 10px;
@@ -26,12 +27,16 @@ p {
 
 main section {
   margin-bottom: 100px;
+  padding-top: 70px;
   /*header分下げる*/
   text-align: center;
 }
 main section h2 {
   color: #0098db;
   font-size: 2rem;
+}
+main section h2 .title_phone {
+  display: none;
 }
 main section h2 p {
   font-size: 1rem;
@@ -54,9 +59,17 @@ main section h2 p {
     padding: 0 10px;
   }
   main section div h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    line-break: anywhere;
+    white-space: normal;
+  }
+  main section div h2 .title_pc {
+    display: none;
+  }
+  main section div h2 .title_phone {
+    display: block;
   }
   main section div h2 p {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
 }/*# sourceMappingURL=main.css.map */
