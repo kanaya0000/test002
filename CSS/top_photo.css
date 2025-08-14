@@ -53,10 +53,16 @@ p {
   padding: 0 10px;
   font-size: 1.8rem;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 #top_photo .photo ul li svg {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+#top_photo .photo ul li span {
+  width: calc(100% - 30px);
 }
 #top_photo .photo ul li .tax {
   font-size: 0.7rem;
@@ -94,14 +100,11 @@ p {
     margin-bottom: 50px;
   }
   main #top_photo .photo ul li {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
   }
-  main #top_photo .photo ul li svg {
-    width: 15px;
-    height: 15px;
-    padding-right: 10px;
-  }
-  main #top_photo .photo ul li:nth-child(1), main #top_photo .photo ul li:nth-child(2), main #top_photo .photo ul li:nth-child(3) {
+  main #top_photo .photo ul li:nth-child(1),
+  main #top_photo .photo ul li:nth-child(2),
+  main #top_photo .photo ul li:nth-child(3) {
     width: 95%;
     margin: 10px auto;
   }
