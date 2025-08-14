@@ -19,6 +19,12 @@
             // console.log(window.scrollY);　スクロール量
 
             for(let j=0;j<class_list.length;j++) {
+                if(window.scrollY > 499) {
+                    class_list[j].classList.add('display');
+                } else {
+                    class_list[j].classList.remove('display');
+                }
+
                 if(window.scrollY > 500) {
                     class_list[j].classList.add('on');
                 } else {
