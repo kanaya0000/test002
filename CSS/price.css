@@ -207,6 +207,9 @@ main #price .price .price_explanation .explanation_text {
   main #price .price .price2 div ul {
     width: 90%;
   }
+  main #price .price .price3 span {
+    font-size: 1.5rem;
+  }
   main #price .price .price_photo .price_notice {
     flex-direction: column;
   }
