@@ -110,6 +110,9 @@ main #voice .voice .voice_list .voice_set .voice_sub details ul .voice_sub_title
   margin-right: 10px;
   color: #0098db;
 }
+main #voice .voice .voice_list .voice_set .voice_sub details .ul_title li {
+  font-weight: bold;
+}
 
 @media screen and (max-width: 1000px) {
   main #voice .voice p {
