@@ -77,6 +77,9 @@ main #voice .voice .voice_list .voice_set .voice_sub .voice_note {
   color: gray;
   margin-bottom: 10px;
 }
+main #voice .voice .voice_list .voice_set .voice_sub .voice_subtitle {
+  font-size: 1rem;
+}
 main #voice .voice .voice_list .voice_set .voice_sub details summary {
   color: #0098db;
   display: flex;
